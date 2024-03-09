@@ -79,6 +79,20 @@
       background-image: url("./Bucket06.png");
       color: #E8344E;
     }
+        .img7 {
+      background-image: url("./Bucket03.png");
+      color: #E8344E;
+    }
+
+    .img8 {
+      background-image: url("./Bucket01.png");
+      color: white;
+    }
+
+    .img9 {
+      background-image: url("./Bucket02.png");
+      color: #E8344E;
+    }
 
     @keyframes scale-out {
       0% {
@@ -115,6 +129,9 @@
     <div class="bucket img4 center">애드센스 수익화</div>
     <div class="bucket img5 center">한달 내내 휴가</div>
     <div class="bucket img6 center">올해 안에 창업</div>
+    <div class="bucket img7 center">반짝반짝</div>
+    <div class="bucket img8 center">빛이나는</div>
+    <div class="bucket img9 center">2024년!!</div>
   </div>
   <script>
     // 페이지 로드 시 이전 상태 복원
@@ -138,6 +155,7 @@
 
         // 로컬 스토리지에 상태 저장
         if (bucket.classList.contains("done")) {
+          alert("오예합니다.")
           localStorage.setItem("bucket" + index, "done");
         } else {
           localStorage.setItem("bucket" + index, "");
